@@ -48,14 +48,20 @@ body {
     background: rgb(245, 245, 245);
 }
 
+.info, .form-header, form, .submit-btn, .log-in-link {
+    margin-left: 2em;
+}
+
 .info {
     font-size: 2em;
     font-weight: 500;
+    margin-bottom: 1em;
 }
 
 .form-header {
     font-size: 2em;
     font-weight: 700;
+    margin-top: .5em;
 }
 
 .form-container {
@@ -65,6 +71,7 @@ body {
 form {
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 2em;
 }
 
 .input {
@@ -79,6 +86,7 @@ form input {
 }
 
 .submit-btn {
+    margin-top: 1em;
     height: 2em;
     width: 10em;
     font-size: 1.2em;
@@ -86,4 +94,8 @@ form input {
     border-radius: 7px;
     background: rgb(254 165 83);
     cursor: pointer;
+}
+
+.log-in-link {
+    margin-top: 1em;
 }
