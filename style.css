@@ -13,7 +13,8 @@ body {
 /* Left-side Content */
 .sidebar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     width: 40vw;
 
@@ -35,6 +36,13 @@ body {
     font-weight: bold;
     color: white;
     background: rgba(0, 0, 0, 0.7);
+}
+
+.photo-attribution {
+    font-size: 12px;
+    text-align: center;
+    color: rgb(196, 196, 196);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* Right-side Content */
@@ -85,6 +93,15 @@ form {
 
 form input {
     font-size: 1.5em;
+    border: .5px solid #000;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
 }
 
 .submit-btn {
